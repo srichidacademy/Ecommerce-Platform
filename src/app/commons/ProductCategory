@@ -1,0 +1,4 @@
+export class ProductCategory{
+    CategoryId:number;
+    CategoryName:string;
+}

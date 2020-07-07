@@ -30,7 +30,18 @@
 </div>
 
 <div class="content" role="main">  
+  <div class="d-flex" id="wrapper">
 
+    <app-sidebar></app-sidebar>
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper" style="width:1300px">     
+
+      <router-outlet></router-outlet>
+    </div>
+   
+
+  </div>
+ 
 </div>
 
-<router-outlet></router-outlet>
