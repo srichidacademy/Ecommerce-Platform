@@ -9,8 +9,9 @@ import { AddProductComponent } from './components/add-product/add-product.compon
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
-import { SharedService } from './services/shared.service';
 import { SearchComponent } from './components/search/search.component';
+import { SharedService } from './services/shared.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SearchComponent } from './components/search/search.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [SharedService],
   bootstrap: [AppComponent]

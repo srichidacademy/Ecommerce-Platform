@@ -13,10 +13,8 @@ export class SidebarComponent implements OnInit {
   ngOnInit(): void {
     this.sharedService.sharedMessage.subscribe(message => this.message = message)
   }
-  newMessage(category:string) {
-
+  SetCategory(category:string) {
     this.sharedService.nextMessage(category)
-
   }
 
 }
